@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabaseClient';
 import { assessDeviceFromImages } from '@/lib/gemini';
 import { PricingStats } from '@/lib/priceEngine';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 async function uploadToStorage(file: File) {
   const arrayBuffer = await file.arrayBuffer();
