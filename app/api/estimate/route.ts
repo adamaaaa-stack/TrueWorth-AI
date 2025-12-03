@@ -5,6 +5,7 @@ import { assessDeviceFromImages } from '@/lib/gemini';
 import { PricingStats } from '@/lib/priceEngine';
 
 export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 async function uploadToStorage(file: File) {
   const arrayBuffer = await file.arrayBuffer();
